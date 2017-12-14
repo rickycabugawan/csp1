@@ -1,0 +1,132 @@
+/*landing-page*/
+
+.wrapper {
+	height: 100vh;
+  	background-image: url(../img/bg.jpg);
+	background-color: rgba(0, 0, 0, 0.3);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+}
+
+
+/*carousel*/
+.carousel-caption {
+	bottom: 15%;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 30px;
+	right: 0;
+	left: 0;	
+}
+
+.carousel-caption > h1 {
+	font-size: 70px;
+	font-weight: bold;
+	text-shadow: 3px 3px black;
+}
+
+.carousel-caption > p {
+	text-shadow: 2px 2px black;
+}
+
+.carousel-item {
+	height: 650px;
+}
+.carousel-item > img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: auto;
+	width: 100%;
+}
+
+
+/*feature*/
+.feature-heading {
+	font-weight: 300;
+	font-size: 50px;
+	margin-top: 5%;
+}
+
+.feature-image > img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: auto;
+	width: 100%;
+}
+
+/*howitworks*/
+.howitworks {
+	background-image: url(../img/howitworksbackdrop.jpg);
+	background-size: 80%;
+	background-position: center 90%;
+	background-repeat: repeat;
+	animation:100s scroll infinite linear;
+}
+
+.howitworks-image {
+	height: 200px;
+}
+
+@keyframes scroll {
+	0%{background-position:left 90%;}
+  	100%{background-position:-3000px 90%;}
+}
+
+/*rates*/
+.rates-body .card {
+	height: 350px;
+	box-shadow: 5px 5px 5px black;
+
+}
+
+/*maps*/
+.map-body {
+	height: 700px;
+}
+
+.about-body {
+	height: auto;
+}
+
+.tuitt {
+	height: 120px;
+}
+
+
+/*media adjustments*/
+@media only screen and (max-width: 960px) {
+	.carousel-item > img {
+		height: 100%;
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.carousel-item {
+		height: 27rem;
+	}
+
+	.carousel-caption {
+	font-size: 20px;
+	}
+
+	.carousel-caption > h1 {
+		font-size: 35px;
+		font-weight: 400;
+	}
+
+	.newschannel-img {
+		margin: -5px;
+	}
+
+	.howitworks-image {
+		height: 120px;
+	}
+	.map-body {
+		height: 500px;
+	}
+
+}
